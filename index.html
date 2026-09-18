@@ -4,7 +4,18 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>interview</title>
+    <title>Cat profile</title>
+    <script>
+      // Set theme before first paint: saved choice, else system preference.
+      {
+        let theme
+        try { theme = localStorage.theme } catch {}
+        document.documentElement.classList.toggle(
+          'dark',
+          theme ? theme === 'dark' : matchMedia('(prefers-color-scheme: dark)').matches,
+        )
+      }
+    </script>
   </head>
   <body>
     <div id="root"></div>
