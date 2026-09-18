@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Cat profile</title>
     <script>
-      // Set theme before first paint: saved choice, else system preference.
       {
         let theme
         try { theme = localStorage.theme } catch {}
@@ -14,6 +13,11 @@
           'dark',
           theme ? theme === 'dark' : matchMedia('(prefers-color-scheme: dark)').matches,
         )
+        let lang
+        try { lang = localStorage.lang } catch {}
+        if (!(lang || navigator.language).startsWith('en') || location.pathname !== '/') {
+          document.documentElement.dataset.prerender = 'hidden'
+        }
       }
     </script>
   </head>

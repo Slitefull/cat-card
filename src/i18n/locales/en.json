@@ -1,0 +1,46 @@
+{
+  "meta": {
+    "title": "Cat profile",
+    "description": "Photo and details of a cat.",
+    "catTitle": "{{name}}, {{breed}} cat",
+    "catDescription": "{{name}} is a {{breed}} cat. See their photo and profile."
+  },
+  "skipLink": "Jump to the cats",
+  "cat": {
+    "loading": "Loading cat",
+    "imageAlt": "{{name}}, a {{breed}} cat"
+  },
+  "error": {
+    "load": "Couldn't load the cat. Check your connection and try again.",
+    "refresh": "Refresh page"
+  },
+  "notFound": {
+    "title": "Page not found",
+    "back": "Back to the cat"
+  },
+  "theme": {
+    "label": "Theme",
+    "light": "light",
+    "dark": "dark"
+  },
+  "language": {
+    "label": "Language"
+  },
+  "settings": {
+    "title": "Settings",
+    "close": "Close"
+  },
+  "stack": {
+    "like": "Like",
+    "nope": "Skip",
+    "flip": "Flip card",
+    "meow": "Meow",
+    "sounds": {
+      "meow": "Meow!",
+      "mew": "Mew!",
+      "mrrow": "Mrrrow!",
+      "mrrp": "Mrrp?",
+      "meeow": "Meeeow!"
+    }
+  }
+}
